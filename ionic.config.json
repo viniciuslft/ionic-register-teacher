@@ -1,0 +1,7 @@
+{
+  "name": "cadastro-professor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
