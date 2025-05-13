@@ -4,7 +4,7 @@ Este projeto tem como objetivo desenvolver uma aplicação responsiva para **cad
 
 ## Funcionalidades
 
-- **Cadastro de Professores**: Interface para inserir dados como nome, disciplina, e-mail, etc.
+- **Cadastro de Professores**: Interface para inserir dados como nome, e-mail, telefone, etc.
 - **Layout Responsivo**: Utilização de TailwindCSS para adaptar o layout a diferentes tamanhos de tela.
 - **Integração com Ionic e Angular**: Navegação fluida, componentes prontos para dispositivos móveis e estrutura moderna.
 
