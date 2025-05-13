@@ -3,12 +3,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'cadastro-professor',
+    loadChildren: () => import('./pages/cadastro-professor/cadastro-professor.module').then( m => m.CadastroProfessorPageModule)
   },
-  {
+    {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'cadastro-professor',
     pathMatch: 'full'
   },
 ];
