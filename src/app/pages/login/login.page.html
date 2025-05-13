@@ -1,0 +1,16 @@
+<ion-content class="ion-padding">
+  <div class="flex flex-col items-center justify-center h-full">
+    <h1 class="text-2xl font-bold mb-6">Login</h1>
+    <form (ngSubmit)="login()">
+      <div class="flex flex-col items-center justify-center">
+        <input [(ngModel)]="email" name="email" type="email" placeholder="Email" class="w-72 p-3 mb-4 border rounded" required />
+        <input [(ngModel)]="password" name="password" type="password" placeholder="Senha" class="w-72 p-3 mb-4 border rounded" required />
+        <button type="submit" class="w-72 bg-blue-500 text-white p-3 rounded">Entrar</button>
+      </div>
+    </form>
+    <p class="mt-4">
+      Não tem uma conta?
+      <a routerLink="/register" class="text-blue-600 underline">Cadastre-se</a>
+    </p>
+  </div>
+</ion-content>

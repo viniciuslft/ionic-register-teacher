@@ -1,20 +1,11 @@
-<ion-header>
-  <ion-toolbar class="bg-blue-600">
-    <ion-title class="text-white">Cadastro de Professor</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="bg-gray-100 flex justify-center items-center min-h-screen w-full">
-  <div class="w-full max-w-xl mt-10 p-8 bg-white rounded-xl shadow-md">
-
+<ion-content class="ion-padding">
+  <div class="rounded-xl shadow-md flex flex-col items-center justify-center h-full">
     <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Cadastro de Professor</h2>
-
     <form (ngSubmit)="salvar()" #form="ngForm" class="space-y-6">
-
       <!-- Nome -->
       <div>
-        <label class="block text-gray-700 font-medium mb-1">Nome</label>
-        <input type="text" [(ngModel)]="professor.nome" name="nome" required minlength="2" #nomeCtrl="ngModel" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <label class="block text-white font-medium mb-1">Nome</label>
+        <input type="text" [(ngModel)]="professor.nome" name="nome" required minlength="2" #nomeCtrl="ngModel" class="w-72 p-3 mb-4 border rounded" />
         <div *ngIf="nomeCtrl.invalid && nomeCtrl.touched" class="text-red-500 text-sm mt-1">
           <span *ngIf="nomeCtrl.errors?.['required']">Nome é obrigatório.</span>
           <span *ngIf="nomeCtrl.errors?.['minlength']">Mínimo de 2 caracteres.</span>
@@ -23,8 +14,8 @@
 
       <!-- Email -->
       <div>
-        <label class="block text-gray-700 font-medium mb-1">Email</label>
-        <input type="email" [(ngModel)]="professor.email" name="email" required email #emailCtrl="ngModel" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <label class="block text-white font-medium mb-1">Email</label>
+        <input type="email" [(ngModel)]="professor.email" name="email" required email #emailCtrl="ngModel" class="w-72 p-3 mb-4 border rounded" />
         <div *ngIf="emailCtrl.invalid && emailCtrl.touched" class="text-red-500 text-sm mt-1">
           <span *ngIf="emailCtrl.errors?.['required']">Email é obrigatório.</span>
           <span *ngIf="emailCtrl.errors?.['email']">Formato inválido.</span>
@@ -33,8 +24,8 @@
 
       <!-- Telefone -->
       <div>
-        <label class="block text-gray-700 font-medium mb-1">Telefone</label>
-        <input type="tel" [(ngModel)]="professor.telefone" name="telefone" required pattern="^[0-9]{10,15}$" #telCtrl="ngModel" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <label class="block text-white font-medium mb-1">Telefone</label>
+        <input type="tel" [(ngModel)]="professor.telefone" name="telefone" required pattern="^[0-9]{10,15}$" #telCtrl="ngModel" class="w-72 p-3 mb-4 border rounded" />
         <div *ngIf="telCtrl.invalid && telCtrl.touched" class="text-red-500 text-sm mt-1">
           <span *ngIf="telCtrl.errors?.['required']">Telefone é obrigatório.</span>
           <span *ngIf="telCtrl.errors?.['pattern']">Apenas números (10 a 15 dígitos).</span>
@@ -43,8 +34,8 @@
 
       <!-- Idade -->
       <div>
-        <label class="block text-gray-700 font-medium mb-1">Idade</label>
-        <input type="number" [(ngModel)]="professor.idade" name="idade" required min="18" max="100" #idadeCtrl="ngModel" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <label class="block text-white font-medium mb-1">Idade</label>
+        <input type="number" [(ngModel)]="professor.idade" name="idade" required min="18" max="100" #idadeCtrl="ngModel" class="w-72 p-3 mb-4 border rounded" />
         <div *ngIf="idadeCtrl.invalid && idadeCtrl.touched" class="text-red-500 text-sm mt-1">
           <span *ngIf="idadeCtrl.errors?.['required']">Idade é obrigatória.</span>
           <span *ngIf="idadeCtrl.errors?.['min']">Mínimo 18 anos.</span>
@@ -54,11 +45,20 @@
 
       <!-- Botão -->
       <div class="text-center pt-4">
-        <button type="submit" [disabled]="form.invalid" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+        <button type="submit" [disabled]="form.invalid" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-10 rounded-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
           Cadastrar
         </button>
       </div>
 
     </form>
+    <div class="flex gap-3 mt-6">
+      <button routerLink="/login" class="bg-blue-500 text-white px-4 py-2 rounded">
+        Ir para Login
+      </button>
+
+      <button routerLink="/register" class="bg-green-500 text-white px-4 py-2 rounded">
+        Criar Conta
+      </button>
+    </div>
   </div>
 </ion-content>

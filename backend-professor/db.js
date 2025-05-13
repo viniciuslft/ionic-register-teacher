@@ -15,6 +15,24 @@ connection.connect((err) => {
 
   console.log(':white_check_mark: Conectado ao MySQL com sucesso!');
 
+  const createUsersTable = `
+      CREATE TABLE IF NOT EXISTS users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
+        email VARCHAR(100) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    `;
+
+    connection.query(createUsersTable, (err) => {
+      if (err) {
+        console.error('Erro ao criar tabela users:', err);
+      } else {
+        console.log('Tabela "users" verificada/criada com sucesso.');
+      }
+    });
+
   const createTableQuery = `
     CREATE TABLE IF NOT EXISTS professores (
       id INT AUTO_INCREMENT PRIMARY KEY,
