@@ -1,0 +1,17 @@
+<ion-content class="ion-padding">
+  <div class="flex flex-col items-center justify-center h-full">
+    <h1 class="text-2xl font-bold mb-6">Cadastro</h1>
+    <form (ngSubmit)="register()">
+      <div class="flex flex-col items-center justify-center">
+        <input [(ngModel)]="name" name="name" type="text" placeholder="Nome" class="w-72 p-3 mb-4 border rounded" required />
+        <input [(ngModel)]="email" name="email" type="email" placeholder="Email" class="w-72 p-3 mb-4 border rounded" required />
+        <input [(ngModel)]="password" name="password" type="password" placeholder="Senha" class="w-72 p-3 mb-4 border rounded" required />
+      </div>
+      <button type="submit" class="w-72 bg-green-500 text-white p-3 rounded">Cadastrar</button>
+    </form>
+    <p class="mt-4">
+      Já tem conta?
+      <a routerLink="/login" class="text-blue-600 underline">Entrar</a>
+    </p>
+  </div>
+</ion-content>
