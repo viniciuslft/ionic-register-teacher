@@ -11,16 +11,13 @@ Este projeto tem como objetivo desenvolver uma aplicação responsiva para **cad
 ## Tecnologias Utilizadas
 
 ### Linguagens:
-- <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="TypeScript logo" /></a>
-  <img width="12" />
+- <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="TypeScript logo"/></a><img width="12"/>
+- <a href="https://www.nodejs.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" height="30" alt="NodeJS logo"/></a><img width="12"/>
 
 ### Frameworks e Bibliotecas:
-- <a href="https://angular.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="30" alt="Angular logo" /></a>
-  <img width="12" />
-- <a href="https://ionicframework.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" height="30" alt="Ionic logo" /></a>
-  <img width="12" />
-- <a href="https://tailwindcss.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height="30" alt="TailwindCSS logo" /></a>
-  <img width="12" />
+- <a href="https://angular.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="30" alt="Angular logo"/></a><img width="12"/>
+- <a href="https://ionicframework.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" height="30" alt="Ionic logo"/></a><img width="12"/>
+- <a href="https://tailwindcss.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height="30" alt="TailwindCSS logo"/></a><img width="12"/>
 
 ## Funcionalidades Implementadas
 
