@@ -17,11 +17,16 @@ export class LoginPage {
     this.http.post('http://localhost:3000/api/login', {
       email: this.email,
       password: this.password
-    }).subscribe((res: any) => {
-      console.log('Login bem-sucedido', res);
-      // redirecionar ou salvar token se houver
-    }, err => {
-      alert('Credenciais inválidas');
+    }).subscribe({
+      next: (res: any) => {
+        // ✅ salva o usuário no localStorage
+        localStorage.setItem('usuario', JSON.stringify(res.user || res.usuario || res));
+        // ✅ redireciona para a tela de cadastro de professor
+        this.router.navigate(['/cadastro-professor']);
+      },
+      error: () => {
+        alert('Credenciais inválidas');
+      }
     });
   }
 }

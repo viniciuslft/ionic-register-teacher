@@ -49,16 +49,11 @@
           Cadastrar
         </button>
       </div>
-
     </form>
-    <div class="flex gap-3 mt-6">
-      <button routerLink="/login" class="bg-blue-500 text-white px-4 py-2 rounded">
-        Ir para Login
-      </button>
 
-      <button routerLink="/register" class="bg-green-500 text-white px-4 py-2 rounded">
-        Criar Conta
-      </button>
-    </div>
+    <!-- Botão de logout -->
+    <button (click)="logout()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded mt-6">
+      Sair
+    </button>
   </div>
 </ion-content>
